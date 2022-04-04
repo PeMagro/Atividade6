@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Atividade 6</title>
+    <title>Bar do Preguinho</title>
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +12,17 @@
 </head>
 
 <body link="white" vlink="white">
-    <header>
+    <header id="header">
         <nav>
             <a href="#principal">Home</a>
             <a href="#secundaria">Quem Somos</a>
             <a href="#terciaria">Menu</a>
             <a href="#quarta">Contato</a>
         </nav>
-        <button id="cadastro">Cadastro para Delivery</button>
+        <button id="cadastro">Faça o seu Cadastro!</button>
     </header>
     <main>
+        <hr>
         <section id="principal">
             <div id="div_principal">
                 <div id="textos1">
@@ -37,7 +38,9 @@
                     <p class="txt_principal">Venha nos visitar e conhecer nossa instalação!!</p>
                     <p class="txt_secundario">Estamos no bairo da Vila Carrão em um espaço muito arejado, confortável e acolhedor. Temos mesas individuais e para a família toda! Temos mesas tanto na área interna, quanto na área externa!</p>
                 </div>
-                <button id="galeria">Clique para ver nossa galeria de fotos</button>
+                <a href="https://www.google.com/maps/uv?pb=!1s0x94ce5e77853c9705%3A0xbf6f5f6d201d8c0b!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr%3Dw355-h200-k-no!5sbar%20do%20preguinho%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr&hl=pt-BR&sa=X&ved=2ahUKEwjctdKEs_r2AhU6t5UCHS3lD-UQoip6BAhXEAM#">
+                    <button id="galeria">Clique para ver nossa galeria de fotos</button>
+                </a>
             </div>
             <div id="secundaria_direita">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4224639752497!2d-46.54679768502242!3d-23.553265984686956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e77853c9705%3A0xbf6f5f6d201d8c0b!2sBar%20do%20Preguinho!5e0!3m2!1spt-BR!2sbr!4v1648484891924!5m2!1spt-BR!2sbr"
@@ -45,6 +48,9 @@
             </div>
         </section>
         <section id="terciaria">
+
+            <p id="txt_terciaria">Escolha o hambúrguer que mais chamar a sua atenção!</p>
+
             <div id="menu">
                 <div id="menu1" class="todos_menus">
                     <img src="imagens/tradicional.jpg">
@@ -77,11 +83,32 @@
                     <button class="btnpedir">Clique para pedir!</button>
                 </div>
             </div>
-            <p id="txt_terciaria">Escolha o hambúrguer que mais chamar a sua atenção!</p>
-        </section>
-        <section id="quarta">
 
         </section>
+        <section id="quarta">
+            <p id="titulo_quarta">Entre em contato conosco!</p>
+            <div id="div_contato">
+                <input type="text" class="imput_padrao" placeholder="Digite seu nome...">
+                <input type="email" class="imput_padrao" placeholder="Digite seu email...">
+                <input type="tel" class="imput_padrao" placeholder="Digite seu telefone...">
+                <textarea placeholder="Digite uma mensagem..."></textarea>
+                <input type="button" class="imput_button" value="Enviar">
+            </div>
+            <div id="contato_2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KLm3F5wVxFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <a href="#header">
+                <p id="texto_footer1">
+                    VOLTAR PARA O TOPO
+                </p>
+            </a>
+            <p id="texto_footer2">
+                Av. Guilherme Giorgi, 775 - Vila Carrao, São Paulo - SP, 03422-000 <br> Telefone: (11) 2941-6294
+            </p>
+        </footer>
     </main>
 </body>
 
