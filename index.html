@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bar do Preguinho</title>
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="icon" href="imagens/burger.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -13,33 +14,46 @@
 
 <body link="white" vlink="white">
     <header id="header">
-        <nav>
-            <a href="#principal">Home</a>
-            <a href="#secundaria">Quem Somos</a>
-            <a href="#terciaria">Menu</a>
-            <a href="#quarta">Contato</a>
-        </nav>
-        <button id="cadastro">Faça o seu Cadastro!</button>
+        <div id="header_1">
+            <img src="imagens/logo.png">
+        </div>
+        <div id="header_2">
+            <nav>
+                <a href="#principal">Home</a>
+                <a href="#secundaria">Quem Somos</a>
+                <a href="#terciaria">Cardápio</a>
+                <a href="#quarta">Contato</a>
+            </nav>
+            <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/bar-do-preguinho-vila-carrao/139cad36-8217-42cc-a3cf-5789f04a7eb2" target="_blank">
+                <div id="ifood">
+                    <p>Peça no </p>
+                    <img src="imagens/ifood.png">
+                </div>
+            </a>
+        </div>
     </header>
     <main>
-        <hr>
         <section id="principal">
             <div id="div_principal">
                 <div id="textos1">
                     <p id="texto_principal">O bar mais gostoso da região!</p>
-                    <p id="texto_secundario">Para você que gosta de um barzinho tradicional, aquele bar com os melhores hambúrgueres, acompanhamentos e que, ainda por cima, serve almoço, venha nos conhecer!!</p>
+                    <p id="texto_secundario">Para você que gosta de um barzinho tradicional... aquele bar com os melhores hambúrgueres, as melhores bebidas, as melhores porções e acompanhamentos e que, ainda por cima, serve almoço... venha nos conhecer!!</p>
                 </div>
-                <button id="saibamais">Saiba Mais</button>
+                <a href="#secundaria"><button id="saibamais">Saiba Mais</input>
+                </a>
             </div>
         </section>
         <section id="secundaria">
             <div id="secundaria_esquerda">
                 <div id="textos2">
-                    <p class="txt_principal">Venha nos visitar e conhecer nossa instalação!!</p>
-                    <p class="txt_secundario">Estamos no bairo da Vila Carrão em um espaço muito arejado, confortável e acolhedor. Temos mesas individuais e para a família toda! Temos mesas tanto na área interna, quanto na área externa!</p>
+                    <p class="txt_principal">Passe para conhecer nossa casa!!</p>
+                    <p class="txt_secundario">Ficamos no bairo da Vila Carrão em um espaço muito confortável e acolhedor. Temos mesas individuais e para a família toda! As mesas ficam tanto na área interna, quanto na área externa!</p>
+                    <hr class="hr_dif">
+                    <p class="txt_principal">Dê uma olhada em nossas fotos!!</p>
                 </div>
-                <a href="https://www.google.com/maps/uv?pb=!1s0x94ce5e77853c9705%3A0xbf6f5f6d201d8c0b!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr%3Dw355-h200-k-no!5sbar%20do%20preguinho%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr&hl=pt-BR&sa=X&ved=2ahUKEwjctdKEs_r2AhU6t5UCHS3lD-UQoip6BAhXEAM#">
-                    <button id="galeria">Clique para ver nossa galeria de fotos</button>
+                <a href="https://www.google.com/maps/uv?pb=!1s0x94ce5e77853c9705%3A0xbf6f5f6d201d8c0b!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr%3Dw355-h200-k-no!5sbar%20do%20preguinho%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipP4D8iGOjJdQ4EfZOEtDI0hJV-PpYs4IcnjiTGr&hl=pt-BR&sa=X&ved=2ahUKEwjctdKEs_r2AhU6t5UCHS3lD-UQoip6BAhXEAM#"
+                    target="_blank">
+                    <div id="galeria">Galeria de fotos</div>
                 </a>
             </div>
             <div id="secundaria_direita">
@@ -49,42 +63,87 @@
         </section>
         <section id="terciaria">
 
-            <p id="txt_terciaria">Escolha o hambúrguer que mais chamar a sua atenção!</p>
+            <p id="txt_terciaria">Escolha os itens que mais chamam a sua atenção!</p>
 
-            <div id="menu">
-                <div id="menu1" class="todos_menus">
-                    <img src="imagens/tradicional.jpg">
-                    <p class="txt1menu">Tradicional</p>
-                    <p class="txt2menu">Pão de hambúrguer artesanal, carne bovina tradicional de 150g, queijo prato, alface lisa, tomate e maionese verde.</p>
-                    <button class="btnpedir">Clique para pedir!</button>
+            <div id="menus">
+                <div id="menu1">
+                    <div class="todos_menus">
+                        <img src="imagens/tradicional.jpg" class="imgmenu">
+                        <p class="txt1menu">Tradicional</p>
+                        <p class="txt2menu">Pão de hambúrguer artesanal, carne bovina tradicional de 150g, queijo prato, alface lisa, tomate e maionese verde.</p>
+                        <p class="valores">R$ 29,99</p>
+                        <button class="btnpedir">Peça Já!</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/costelabbq.jpg" class="imgmenu">
+                        <p class="txt1menu">Costela Barbecue</p>
+                        <p class="txt2menu">Pão de hambúrguer artesanal, carne de costela bovina de 150g, cheddar, cebola caramelizada e molho barbecue.</p>
+                        <p class="valores">R$ 32,99</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/picanha.jpg" class="imgmenu">
+                        <p class="txt1menu">Picanha</p>
+                        <p class="txt2menu">Pão francês redondo artesanal, carne de picanha bovina de 150g, queijo prato, alface lisa, tomate, cebola roxa e maionese verde.</p>
+                        <p class="valores">R$ 34,99</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/picanhachefe.jpg" class="imgmenu">
+                        <p class="txt1menu">Picanha do Chefe</p>
+                        <p class="txt2menu">Pão australiano artesanal, carne de picanha bovina de 150g, cheddar, alface lisa, tomate, cebola caramelizada e maionese verde.</p>
+                        <p class="valores">R$ 37,99</p>
+                        <button class="btnpedir">Peça Já!</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/vegetariano.jpg" class="imgmenu">
+                        <p class="txt1menu">Vegetariano</p>
+                        <p class="txt2menu">Pão australiano artesanal, hambúrguer de berinjela de 150g, queijo prato, alface lisa, tomate e maionese verde.</p>
+                        <p class="valores">R$ 29,99</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
                 </div>
-                <div id="menu2" class="todos_menus">
-                    <img src="imagens/costelabbq.jpg">
-                    <p class="txt1menu">Costela Barbecue</p>
-                    <p class="txt2menu">Pão de hambúrguer artesanal, carne de costela bovina de 150g, cheddar, cebola caramelizada e molho barbecue.</p>
-                    <button class="btnpedir">Clique para pedir!</button>
-                </div>
-                <div id="menu3" class="todos_menus">
-                    <img src="imagens/picanha.jpg">
-                    <p class="txt1menu">Picanha</p>
-                    <p class="txt2menu">Pão francês redondo artesanal, carne de picanha bovina de 150g, queijo prato, alface lisa, tomate, cebola roxa e maionese verde.</p>
-                    <button class="btnpedir">Clique para pedir!</button>
-                </div>
-                <div id="menu4" class="todos_menus">
-                    <img src="imagens/picanhachefe.jpg">
-                    <p class="txt1menu">Picanha do Chefe</p>
-                    <p class="txt2menu">Pão australiano artesanal, carne de picanha bovina de 150g, cheddar, alface lisa, tomate, cebola caramelizada e maionese verde.</p>
-                    <button class="btnpedir">Clique para pedir!</button>
-                </div>
-                <div id="menu5" class="todos_menus">
-                    <img src="imagens/vegetariano.jpg">
-                    <p class="txt1menu">Vegetariano</p>
-                    <p class="txt2menu">Pão australiano artesanal, hambúrguer de berinjela de 150g, queijo prato, alface lisa, tomate e maionese verde.</p>
-                    <button class="btnpedir">Clique para pedir!</button>
+                <div id="menu2">
+                    <div class="todos_menus">
+                        <img src="imagens/marmita1.png" class="imgmenu2">
+                        <p class="txt1menu">Marmitex individual</p>
+                        <p class="txt2menu">Porção generosa de arroz, feijão, 2 misturas fresquinhas tudo na mesma embalagem para uma pessoa (bem servida).</p>
+                        <p class="valores">R$ 30,90</p>
+                        <button class="btnpedir">Peça Já!</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/marmita2.png" class="imgmenu2">
+                        <p class="txt1menu">Marmitex para 2 pessoas</p>
+                        <p class="txt2menu">Porção generosa de arroz, feijão, 4 misturas fresquinhas separando em 3 embalagens: uma de feijão, uma de arroz e uma com as misturas, para 2 pessoas (bem servidas).</p>
+                        <p class="valores">R$ 65,90</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/marmita3.png" class="imgmenu2">
+                        <p class="txt1menu">Marmitex para 3 pessoas</p>
+                        <p class="txt2menu">Porção generosa de arroz, feijão, 6 misturas fresquinhas separando em 3 embalagens: uma de feijão, uma de arroz e uma com as misturas, para 3 pessoas (bem servidas).</p>
+                        <p class="valores">R$ 98,90</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/refri_lata.png" class="imgrefri">
+                        <p class="txt1menu">Refrigerante Lata</p>
+                        <p class="txt2menu">Refrigerante em lata 350ml: Coca-Cola, Coca-Cola Zero, Guaraná, Guaraná Zero, Fanta Uva, Fanta Laranja, Sprite, Schweppes citrus.</p>
+                        <p class="valores">R$ 7,00</p>
+                        <button class="btnpedir">Peça Já!</button>
+                    </div>
+                    <div class="todos_menus">
+                        <img src="imagens/refri2l.png" class="imgrefri">
+                        <p class="txt1menu">Refrigerante 2L</p>
+                        <p class="txt2menu">Refrigerante em garrafa de 2L: Coca-Cola, Coca-Cola Zero, Guaraná.</p>
+                        <p class="valores">R$ 14,00</p>
+                        <button class="btnpedir">Peça Já</button>
+                    </div>
                 </div>
             </div>
 
         </section>
+        <hr>
         <section id="quarta">
             <p id="titulo_quarta">Entre em contato conosco!</p>
             <div id="div_contato">
@@ -100,10 +159,15 @@
         </section>
         <hr>
         <footer>
+            <div id="redes">
+                <a href="https://www.facebook.com/bardoprego/" target="_blank"><img src="imagens/facebook.png" class="imgredes"></a>
+                <a href="https://www.instagram.com/bar_do_preguinho/" target="_blank"><img src="imagens/instagram.png" class="imgredes"></a>
+                <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/bar-do-preguinho-vila-carrao/139cad36-8217-42cc-a3cf-5789f04a7eb2" target="_blank"><img src="imagens/ifood.png" class="imgredes"></a>
+            </div>
             <a href="#header">
-                <p id="texto_footer1">
-                    VOLTAR PARA O TOPO
-                </p>
+                <div id="texto_footer1">
+                    <p>VOLTAR PARA O TOPO</p>
+                </div>
             </a>
             <p id="texto_footer2">
                 Av. Guilherme Giorgi, 775 - Vila Carrao, São Paulo - SP, 03422-000 <br> Telefone: (11) 2941-6294

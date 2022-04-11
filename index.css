@@ -17,38 +17,90 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: #222;
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
 }
 
 header nav {
     position: relative;
     float: left;
-    padding-top: 20px;
-    margin-left: 200px;
+    width: 65%;
+    float: left;
+    padding-top: 28px;
 }
 
 header nav a {
     position: relative;
     float: left;
-    text-decoration: none;
     font-family: Arial;
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 70px;
+    padding-bottom: 5px;
 }
 
 header nav a:hover {
-    color: rgb(231, 148, 23);
-    text-decoration: underline;
+    transition: 0.3s;
+    color: #e79417;
+    border-bottom: 2px solid #e79417;
     font-weight: bold;
+}
+
+#header_1 {
+    position: relative;
+    float: left;
+    width: 30%;
+}
+
+#header_1 img {
+    width: 70px;
+    height: 70px;
+    margin-left: 35%;
+}
+
+#header_2 {
+    position: relative;
+    float: left;
+    width: 70%;
+}
+
+#ifood {
+    position: relative;
+    float: left;
+    width: auto;
+    background-color: #f00;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ifood p {
+    position: relative;
+    float: left;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 15px;
+}
+
+#ifood img {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 2px;
 }
 
 #cadastro {
     position: relative;
     float: left;
     margin-left: 25%;
-    background-color: rgb(231, 148, 23);
+    background-color: #e79417;
     padding: 10px;
     margin-top: 8px;
     color: #fff;
@@ -59,13 +111,13 @@ header nav a:hover {
 
 #principal {
     position: relative;
-    width: 96%;
-    height: 400px;
-    background-image: url(imagens/fundo_preguinho.jpg);
+    width: 97%;
+    height: 600px;
+    background-image: url(imagens/background-burger.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding-left: 4%;
-    padding-top: 150px;
+    padding-left: 3%;
+    padding-top: 100px;
 }
 
 #div_principal {
@@ -82,28 +134,40 @@ header nav a:hover {
     position: relative;
     font-size: 40px;
     font-weight: bold;
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e79417;
 }
 
 #texto_secundario {
     position: relative;
+    width: 70%;
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: justify;
+    color: #ccc;
 }
 
 #saibamais {
     position: relative;
     width: 200px;
     display: block;
-    background-color: rgb(231, 148, 23);
+    background-color: #e79417;
     padding: 10px;
-    margin-top: 15px;
+    margin-left: 120px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 15px;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
+}
+
+#saibamais a:hover,
+#galeria:hover {
+    color: #000;
+    transition: 0.5s;
 }
 
 #secundaria {
@@ -145,6 +209,16 @@ header nav a:hover {
     font-size: 20px;
     font-family: verdana;
     margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.hr_dif {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 3px;
+    background-color: #e79417;
+    margin-bottom: 75px;
 }
 
 #secundaria_direita {
@@ -157,26 +231,34 @@ header nav a:hover {
 
 #galeria {
     position: relative;
-    background-color: rgb(231, 148, 23);
+    background-color: #e79417;
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
     color: #fff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
 #terciaria {
     position: relative;
     background-image: url(imagens/fundo_madeira.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 50%;
     width: 100%;
-    height: 600px;
+    height: 1200px;
 }
 
-#menu {
+#menus {
+    position: relative;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#menu1 {
     position: relative;
     height: 400px;
     display: flex;
@@ -187,45 +269,69 @@ header nav a:hover {
 .todos_menus {
     position: relative;
     width: 250px;
-    height: 300px;
+    height: 400px;
     margin-top: 50px;
     border-radius: 10px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-#menu div img {
+.imgmenu {
     position: relative;
     width: 175px;
     height: 100px;
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.imgmenu2 {
+    position: relative;
+    width: 175px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+#menu2 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .txt1menu {
     position: relative;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     color: #000;
     font-family: 'Libre Baskerville', serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .txt2menu {
     position: relative;
     width: 220px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.valores {
+    position: relative;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
     color: #000;
     font-family: 'Libre Baskerville', serif;
 }
 
 .btnpedir {
     position: relative;
-    background-color: rgb(231, 148, 23);
+    background-color: #e79417;
     color: #fff;
     border-radius: 5px;
     border: #000 solid 2px;
@@ -246,8 +352,15 @@ header nav a:hover {
     font-size: 45px;
     margin: auto;
     margin-left: 8%;
-    margin-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
+    text-decoration: underline;
+}
+
+.imgrefri {
+    position: relative;
+    margin-top: 20px;
+    width: 80px;
+    height: 100px;
 }
 
 #quarta {
@@ -286,9 +399,10 @@ header nav a:hover {
     height: 30px;
     background-color: #fff;
     color: #000;
+    padding: 2px;
     font-size: 16px;
     font-family: 'Libre Baskerville', serif;
-    border: 2px solid rgb(231, 148, 23);
+    border: 2px solid #e79417;
 }
 
 textarea {
@@ -313,8 +427,14 @@ textarea {
     font-weight: bold;
     font-size: 15px;
     font-family: 'Libre Baskerville', serif;
-    border: 2px solid rgb(231, 148, 23);
+    border: 2px solid #e79417;
     border-radius: 5px;
+}
+
+.imput_button:hover {
+    background-color: #ccc;
+    color: #000;
+    transition: 0.5s;
 }
 
 #contato_2 {
@@ -325,14 +445,14 @@ textarea {
 }
 
 #contato_2 iframe {
-    border: 1px solid rgb(231, 148, 23);
+    border: 1px solid #e79417;
 }
 
 hr {
     position: relative;
     width: 100%;
     height: 3px;
-    background-color: rgb(231, 148, 23);
+    background-color: #e79417;
 }
 
 footer {
@@ -342,22 +462,50 @@ footer {
     height: 80px;
 }
 
+#redes {
+    position: relative;
+    float: left;
+    width: 21%;
+    padding-left: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 #texto_footer1 {
     position: relative;
     float: left;
-    width: 50%;
+    width: 13%;
+    padding-left: 11%;
+    padding-right: 11%;
     text-align: center;
     margin-top: 30px;
     font-size: 15px;
     font-family: 'Libre Baskerville', serif;
 }
 
+#texto_footer1 p:hover {
+    padding-bottom: 3px;
+    transition: 0.3s;
+    color: #e79417;
+    border-width: 0px 0px 50px 0px;
+    border-bottom: 2px solid #e79417;
+    font-weight: bold;
+}
+
 #texto_footer2 {
     position: relative;
     float: left;
-    width: 50%;
+    width: 40%;
     font-family: 'Libre Baskerville', serif;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     margin-top: 20px;
+}
+
+.imgredes {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
 }
