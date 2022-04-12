@@ -145,7 +145,7 @@ header nav a:hover {
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: justify;
+    text-align: left;
     color: #ccc;
 }
 
@@ -164,10 +164,11 @@ header nav a:hover {
     border-radius: 10px;
 }
 
-#saibamais a:hover,
+#saibamais:hover,
 #galeria:hover {
     color: #000;
     transition: 0.5s;
+	cursor: pointer;
 }
 
 #secundaria {
@@ -327,6 +328,7 @@ header nav a:hover {
     margin-top: 10px;
     color: #000;
     font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
 }
 
 .btnpedir {
@@ -343,6 +345,7 @@ header nav a:hover {
 .btnpedir:hover {
     color: #000;
     transition: 0.5s;
+	cursor: pointer;
 }
 
 #txt_terciaria {
@@ -351,7 +354,7 @@ header nav a:hover {
     color: #fff;
     font-size: 45px;
     margin: auto;
-    margin-left: 8%;
+    text-align: center;
     padding-top: 100px;
     text-decoration: underline;
 }
@@ -435,6 +438,7 @@ textarea {
     background-color: #ccc;
     color: #000;
     transition: 0.5s;
+	cursor: pointer;
 }
 
 #contato_2 {
@@ -508,4 +512,10 @@ footer {
     width: 50px;
     height: 50px;
     margin-top: 15px;
+}
+
+@media only screen and (max-width:1250px){
+	header nav a {
+		margin-right: 40px;
+	}
 }
