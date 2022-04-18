@@ -60,6 +60,7 @@ header nav a:hover {
     width: 70px;
     height: 70px;
     margin-left: 35%;
+    border-radius: 30px;
 }
 
 #header_2 {
@@ -168,7 +169,7 @@ header nav a:hover {
 #galeria:hover {
     color: #000;
     transition: 0.5s;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #secundaria {
@@ -239,7 +240,7 @@ header nav a:hover {
     padding-right: 25px;
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
 }
 
@@ -271,7 +272,6 @@ header nav a:hover {
     position: relative;
     width: 250px;
     height: 400px;
-    margin-top: 50px;
     border-radius: 10px;
     background-color: #fff;
     display: flex;
@@ -285,6 +285,7 @@ header nav a:hover {
     width: 175px;
     height: 100px;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 .imgmenu2 {
@@ -292,6 +293,7 @@ header nav a:hover {
     width: 175px;
     height: 120px;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 #menu2 {
@@ -328,7 +330,7 @@ header nav a:hover {
     margin-top: 10px;
     color: #000;
     font-family: 'Libre Baskerville', serif;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .btnpedir {
@@ -345,7 +347,7 @@ header nav a:hover {
 .btnpedir:hover {
     color: #000;
     transition: 0.5s;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #txt_terciaria {
@@ -355,8 +357,7 @@ header nav a:hover {
     font-size: 45px;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    text-decoration: underline;
+    padding-top: 50px;
 }
 
 .imgrefri {
@@ -406,6 +407,7 @@ header nav a:hover {
     font-size: 16px;
     font-family: 'Libre Baskerville', serif;
     border: 2px solid #e79417;
+    border-radius: 10px;
 }
 
 textarea {
@@ -417,6 +419,7 @@ textarea {
     font-size: 16px;
     font-family: 'Libre Baskerville', serif;
     border: 2px solid rgb(231, 148, 23);
+    border-radius: 10px;
 }
 
 .imput_button {
@@ -438,7 +441,7 @@ textarea {
     background-color: #ccc;
     color: #000;
     transition: 0.5s;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #contato_2 {
@@ -450,6 +453,8 @@ textarea {
 
 #contato_2 iframe {
     border: 1px solid #e79417;
+    border-radius: 20px;
+    box-shadow: 1em 1em 2em black;
 }
 
 hr {
@@ -514,8 +519,8 @@ footer {
     margin-top: 15px;
 }
 
-@media only screen and (max-width:1250px){
-	header nav a {
-		margin-right: 40px;
-	}
+@media only screen and (max-width:1250px) {
+    header nav a {
+        margin-right: 40px;
+    }
 }
